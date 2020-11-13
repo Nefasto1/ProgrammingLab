@@ -3,10 +3,10 @@ s = 0;
 
 a = input("Inserisci il valore (Inserisci un valore non numerico per terminare): ");
 while a.isnumeric():
-    list.append(a);
+    list.append(float(a));
     a = input("Inserisci il valore (Inserisci un valore non numerico per terminare): ");
 
 for item in list:
-    s += float(item);
+    s += item;
 
 print("\nLa somma di {} è: {}" .format(list, s));
